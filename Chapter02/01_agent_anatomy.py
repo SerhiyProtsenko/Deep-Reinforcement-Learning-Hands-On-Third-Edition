@@ -1,7 +1,6 @@
 import random
 from typing import List
 
-
 class Environment:
     def __init__(self):
         self.steps_left = 10
