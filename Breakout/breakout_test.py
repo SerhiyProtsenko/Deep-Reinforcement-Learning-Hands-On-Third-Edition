@@ -21,7 +21,13 @@ gym.register_envs(ale_py)
 
 
 if __name__ == "__main__":
+    #env = gym.make("Breakout-v0", render_mode="rgb_array") #https://ale.farama.org/environments/breakout/
+    # env = gym.make("BreakoutNoFrameskip-v0", render_mode="rgb_array")
+    # env = gym.make("Breakout-v4", render_mode="rgb_array")
+    # env = gym.make("BreakoutNoFrameskip-v4", render_mode="rgb_array")
+
     env = gym.make("ALE/Breakout-v5", render_mode="rgb_array")
+    
     env = gym.wrappers.HumanRendering(env)
     # env = gym.wrappers.RecordVideo(env, video_folder="video")
 
