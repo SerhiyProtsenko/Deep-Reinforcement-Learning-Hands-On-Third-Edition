@@ -9,6 +9,7 @@ if __name__ == "__main__":
 
     while True:
         action = env.action_space.sample()
+        print("Step %d: took action %d" % (total_steps, action))
         obs, reward, is_done, is_trunc, _ = env.step(action)
         total_reward += reward
         total_steps += 1
